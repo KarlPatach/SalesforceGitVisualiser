@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="My Open Cases" icon-name="standard:case">
+        <div class="slds-m-around_medium">    
+            <lightning-datatable
+            data={cases.data}
+            columns={columns}
+            key-field="id">
+            </lightning-datatable>
+        </div>
+    </lightning-card>
+</template>

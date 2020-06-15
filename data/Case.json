@@ -1,0 +1,54 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef1"
+            },
+            "Subject": "Need to add Date Support",
+            "Description": "Dates are not working.",
+            "Status": "New",
+            "Origin": "Web",
+            "Type": "Electrical",
+            "Priority": "Medium",
+            "Pull_Request__c": "https://github.com/KarlPatach/SalesforceGitVisualiser/pull/17"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef2"
+            },
+            "Subject": "Add missing tab",
+            "Description": "There is no tab for the GitRepoLists",
+            "Status": "Working",
+            "Origin": "Phone",
+            "Type": "Other",
+            "Priority": "High",
+            "Pull_Request__c": "https://github.com/KarlPatach/SalesforceGitVisualiser/pull/16"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef3"
+            },
+            "Subject": "Prepare a demo",
+            "Description": "Need a demo for tomorrow",
+            "Status": "New",
+            "Origin": "Web",
+            "Type": "Electronic",
+            "Priority": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef4"
+            },
+            "Subject": "Must have issues",
+            "Description": "We want to see the issues in GH...",
+            "Status": "New",
+            "Origin": "Web",
+            "Priority": "High",
+            "Pull_Request__c": "https://github.com/KarlPatach/SalesforceGitVisualiser/pull/19"
+        }
+    ]
+}
