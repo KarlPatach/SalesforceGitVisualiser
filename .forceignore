@@ -1,0 +1,7 @@
+# LWC configuration files
+**/jsconfig.json
+**/.eslintrc.json
+
+# Non DX deployable resources
+**appMenus
+**profiles
