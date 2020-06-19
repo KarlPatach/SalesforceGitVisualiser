@@ -5,10 +5,6 @@
 # Salesforce cache
 .sfdx/
 .localdevserver/
-.eslintignore
-.forceignore
-.prettierignore
-.prettierrc
 .vscode/extensions.json
 .vscode/launch.json
 .vscode/settings.json
