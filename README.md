@@ -68,6 +68,12 @@ All you need to do is then to push this package's sources by typing:
 sfdx force:source:push -u <scratch org's alias / username>
 ```
 
+Assign the GitHubAppUser permission set to the default user:
+
+```sh
+sfdx force:user:permset:assign -n GitHubAppUser
+```
+
 If you want to have sample data for Case objects, you may import it with:
 
 ```sh

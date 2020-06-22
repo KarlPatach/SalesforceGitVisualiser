@@ -21,6 +21,10 @@ echo "Pushing source..." && \
 sfdx force:source:push -u $ORG_ALIAS && \
 echo "" && \
 
+echo "Assigning permission sets..." && \
+sfdx force:user:permset:assign -n GitHubAppUser -u $ORG_ALIAS && \
+echo "" && \
+
 echo "Opening sample app..." && \
 sfdx force:org:open -u $ORG_ALIAS
 EXIT_CODE="$?"
