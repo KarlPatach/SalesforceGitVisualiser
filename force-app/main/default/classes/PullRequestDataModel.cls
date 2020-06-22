@@ -51,7 +51,7 @@ public class PullRequestDataModel {
 
         pullRequest.put('DisplayUrl', pullRequest.get('url'));
 
-        pullRequest.put('PullRequestURL', ApiUtils.apiUrlToGithub((String)pullRequest.get('url')));
+        pullRequest.put('PullRequestURL', ApiUtils.apiUrlToGitHub((String)pullRequest.get('url')));
 
         pullRequest.put('Draft', pullRequest.get('draft'));
 

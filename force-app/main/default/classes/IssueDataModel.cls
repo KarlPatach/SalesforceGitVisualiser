@@ -53,8 +53,8 @@ public with sharing class IssueDataModel {
 
         issue.put('DisplayUrl', issue.get('url'));
 
-        issue.put('RepositoryURL', ApiUtils.apiUrlToGithub((String)issue.get('repository_url')));
-        issue.put('IssueURL', ApiUtils.apiUrlToGithub((String)issue.get('url')));
+        issue.put('RepositoryURL', ApiUtils.apiUrlToGitHub((String)issue.get('repository_url')));
+        issue.put('IssueURL', ApiUtils.apiUrlToGitHub((String)issue.get('url')));
 
         issue.put('Number', issue.get('number'));
 
