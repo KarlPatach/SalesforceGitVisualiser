@@ -1,12 +1,11 @@
 <template>
-    <lightning-card title="My Github Repositories" icon-name="custom:custom55">
-        <div class="slds-m-around_medium" style="height: 310px;">    
-
-        <lightning-datatable
+    <lightning-card title="My GitHub Repositories" icon-name="custom:custom55">
+        <div class="slds-var-m-around_medium" style="height: 310px;">    
+            <lightning-datatable
                 data={gitHubRepos.data}
                 columns={columns}
                 key-field="id">
-        </lightning-datatable>
+            </lightning-datatable>
         </div>
     </lightning-card>
 </template>

@@ -22,6 +22,11 @@ cmd.exe /c sfdx force:source:push -f -u %ORG_ALIAS%
 call :checkForError
 @echo:
 
+echo Assigning permissions...
+cmd.exe /c sfdx force:user:permset:assign -n GitHubAppUser -u %ORG_ALIAS%
+call :checkForError
+@echo:
+
 rem Check exit code
 @echo:
 if ["%errorlevel%"]==["0"] (
