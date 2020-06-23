@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>LanguagesUrl__c</fullName>
-    <description>LanguagesUrl</description>
+    <description>Languages URL</description>
     <externalDeveloperName>LanguagesUrl</externalDeveloperName>
     <externalId>false</externalId>
     <isFilteringDisabled>false</isFilteringDisabled>
     <isNameField>false</isNameField>
     <isSortingDisabled>false</isSortingDisabled>
-    <label>LanguagesUrl</label>
+    <label>Languages URL</label>
     <required>false</required>
     <type>Url</type>
 </CustomField>
