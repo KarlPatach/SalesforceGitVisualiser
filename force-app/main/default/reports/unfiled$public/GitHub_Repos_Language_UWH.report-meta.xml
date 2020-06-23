@@ -52,8 +52,4 @@
     <showSubTotals>true</showSubTotals>
     <sortColumn>GitHub_Repos__x.OpenIssuesCount__c</sortColumn>
     <sortOrder>Desc</sortOrder>
-    <timeFrameFilter>
-        <dateColumn>GitHub_Repos__x.RepoCreatedDate__c</dateColumn>
-        <interval>INTERVAL_CUSTOM</interval>
-    </timeFrameFilter>
 </Report>
