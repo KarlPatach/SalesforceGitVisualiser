@@ -8,6 +8,8 @@
     <isNameField>false</isNameField>
     <isSortingDisabled>false</isSortingDisabled>
     <label>RepoCreatedDate</label>
+    <length>255</length>
     <required>false</required>
-    <type>DateTime</type>
+    <type>Text</type>
+    <unique>false</unique>
 </CustomField>
