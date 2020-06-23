@@ -15,10 +15,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>CreatedDate__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
                 <field>Draft__c</field>
             </layoutItems>
             <layoutItems>
@@ -43,6 +39,14 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
+                <field>PRCreatedDate__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>PRUpdatedDate__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
                 <field>PullRequestURL__c</field>
             </layoutItems>
             <layoutItems>
@@ -56,10 +60,6 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Title__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>UpdatedDate__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns/>
