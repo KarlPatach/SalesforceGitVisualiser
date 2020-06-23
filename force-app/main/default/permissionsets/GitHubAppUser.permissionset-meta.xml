@@ -131,6 +131,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>GitHub_Pull_Requests__x.PRCreatedDate__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>GitHub_Pull_Requests__x.PRUpdatedDate__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>GitHub_Pull_Requests__x.PullRequestURL__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -280,14 +290,14 @@
     </objectPermissions>
     <tabSettings>
         <tab>GitHub_Issues__x</tab>
-        <visibility>Available</visibility>
+        <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
         <tab>GitHub_Pull_Requests__x</tab>
-        <visibility>Available</visibility>
+        <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
         <tab>GitHub_Repos__x</tab>
-        <visibility>Available</visibility>
+        <visibility>Visible</visibility>
     </tabSettings>
 </PermissionSet>
