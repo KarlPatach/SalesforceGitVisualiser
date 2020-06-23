@@ -5,6 +5,3 @@
 # Non DX deployable resources
 **appMenus
 **profiles
-
-# Do not pull / push app tokens by accident
-**authproviders
