@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>PullRequest__c</fullName>
-    <description>PullRequest</description>
+    <description>Pull Request</description>
     <externalDeveloperName>PullRequest</externalDeveloperName>
     <externalId>false</externalId>
     <isFilteringDisabled>false</isFilteringDisabled>
     <isNameField>false</isNameField>
     <isSortingDisabled>false</isSortingDisabled>
-    <label>PullRequest</label>
+    <label>Pull Request</label>
     <required>false</required>
     <type>Url</type>
 </CustomField>

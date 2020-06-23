@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TotalForks__c</fullName>
-    <description>TotalForks</description>
+    <description>Total Forks</description>
     <externalDeveloperName>TotalForks</externalDeveloperName>
     <externalId>false</externalId>
     <isFilteringDisabled>false</isFilteringDisabled>
     <isNameField>false</isNameField>
     <isSortingDisabled>false</isSortingDisabled>
-    <label>TotalForks</label>
+    <label>Total Forks</label>
     <precision>16</precision>
     <required>false</required>
     <scale>0</scale>
