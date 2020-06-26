@@ -120,7 +120,7 @@
     <enableReports>false</enableReports>
     <enableSearch>false</enableSearch>
     <externalDataSource>GitHub_Data_Source</externalDataSource>
-    <externalName>GitHub Issues</externalName>
+    <externalName>GitHub Issue</externalName>
     <label>GitHub Issue</label>
     <pluralLabel>GitHub Issues</pluralLabel>
     <searchLayouts/>

@@ -1,5 +1,5 @@
 public class PullRequestDataModel {
-    public static final String TABLE_NAME = 'GitHub Pull Requests';
+    public static final String TABLE_NAME = 'GitHub Pull Request';
     
     public static DataSource.Table buildTable(){
         List<DataSource.Column> columns = new List<DataSource.Column>();

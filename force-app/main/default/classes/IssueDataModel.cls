@@ -1,5 +1,5 @@
 public with sharing class IssueDataModel {
-    public static final String TABLE_NAME = 'GitHub Issues';
+    public static final String TABLE_NAME = 'GitHub Issue';
     
     public static DataSource.Table buildTable(){
         List<DataSource.Column> columns = new List<DataSource.Column>();

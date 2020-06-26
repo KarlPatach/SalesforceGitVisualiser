@@ -114,14 +114,14 @@
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>InDevelopment</deploymentStatus>
-    <description>GitHub Pull Requests</description>
+    <description>GitHub Pull Request</description>
     <enableFeeds>false</enableFeeds>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
     <enableSearch>false</enableSearch>
     <externalDataSource>GitHub_Data_Source</externalDataSource>
-    <externalName>GitHub Pull Requests</externalName>
-    <label>GitHub Pull Requests</label>
+    <externalName>GitHub Pull Request</externalName>
+    <label>GitHub Pull Request</label>
     <pluralLabel>GitHub Pull Requests</pluralLabel>
     <searchLayouts/>
 </CustomObject>

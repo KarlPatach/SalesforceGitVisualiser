@@ -1,5 +1,5 @@
 public class RepositoryDataModel {
-    public static final String TABLE_NAME = 'GitHub Repos';
+    public static final String TABLE_NAME = 'GitHub Repository';
 
     public static DataSource.Table buildTable(){
         List<DataSource.Column> columns = new List<DataSource.Column>();
