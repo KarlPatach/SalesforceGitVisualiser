@@ -7,7 +7,7 @@ public with sharing class GitHubRepoController {
             DisplayUrl,
             Name__c,
             Description__c,
-            RepoCreatedDate__c,
+            Repository_Created_Date__c,
             RepoUpdatedDate__c,
             LastPushedDate__c,
             Language__c,

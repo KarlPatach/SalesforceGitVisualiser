@@ -22,7 +22,7 @@ public class RepositoryDataModel {
 
         columns.add(DataSource.Column.text('Language'));
         
-        columns.add(DataSource.Column.text('RepoCreatedDate'));
+        columns.add(DataSource.Column.text('Repository_Created_Date'));
         columns.add(DataSource.Column.text('RepoUpdatedDate'));
         columns.add(DataSource.Column.text('LastPushedDate'));
 
@@ -69,7 +69,7 @@ public class RepositoryDataModel {
 
         repo.put('Language', repo.get('language'));
 
-        repo.put('RepoCreatedDate', DataUtils.transformDate((String)repo.get('created_at')));
+        repo.put('Repository_Created_Date', DataUtils.transformDate((String)repo.get('created_at')));
         repo.put('RepoUpdatedDate', DataUtils.transformDate((String)repo.get('updated_at')));
         repo.put('LastPushedDate', DataUtils.transformDate((String)repo.get('pushed_at')));
 

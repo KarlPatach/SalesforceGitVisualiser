@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>RepoCreatedDate__c</fullName>
-    <description>Repo Created Date</description>
-    <externalDeveloperName>RepoCreatedDate</externalDeveloperName>
+    <fullName>Repository_Created_Date__c</fullName>
+    <description>Repository Created Date</description>
+    <externalDeveloperName>Repository_Created_Date</externalDeveloperName>
     <externalId>false</externalId>
     <isFilteringDisabled>false</isFilteringDisabled>
     <isNameField>false</isNameField>
     <isSortingDisabled>false</isSortingDisabled>
-    <label>Repo Created Date</label>
+    <label>Repository Created Date</label>
     <length>255</length>
     <required>false</required>
     <type>Text</type>

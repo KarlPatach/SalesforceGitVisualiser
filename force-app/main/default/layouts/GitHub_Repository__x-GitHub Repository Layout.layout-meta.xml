@@ -55,7 +55,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>RepoCreatedDate__c</field>
+                <field>Repository_Created_Date__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
