@@ -117,7 +117,7 @@
     <description>GitHub Issue</description>
     <enableFeeds>false</enableFeeds>
     <enableLicensing>false</enableLicensing>
-    <enableReports>false</enableReports>
+    <enableReports>true</enableReports>
     <enableSearch>false</enableSearch>
     <externalDataSource>GitHub_Data_Source</externalDataSource>
     <externalName>GitHub Issue</externalName>
