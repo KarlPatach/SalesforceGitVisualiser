@@ -47,7 +47,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>OwnerLogin__c</field>
+                <field>Owner_Login__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>

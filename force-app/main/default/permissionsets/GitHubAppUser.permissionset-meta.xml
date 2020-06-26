@@ -216,7 +216,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Repository__x.OwnerLogin__c</field>
+        <field>GitHub_Repository__x.Owner_Login__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

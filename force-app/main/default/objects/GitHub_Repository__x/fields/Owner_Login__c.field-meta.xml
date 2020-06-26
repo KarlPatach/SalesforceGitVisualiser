@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>OwnerLogin__c</fullName>
+    <fullName>Owner_Login__c</fullName>
     <description>Owner Login</description>
-    <externalDeveloperName>OwnerLogin</externalDeveloperName>
+    <externalDeveloperName>Owner_Login</externalDeveloperName>
     <externalId>false</externalId>
     <isFilteringDisabled>false</isFilteringDisabled>
     <isNameField>false</isNameField>

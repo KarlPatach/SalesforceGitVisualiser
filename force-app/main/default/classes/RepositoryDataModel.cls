@@ -37,7 +37,7 @@ public class RepositoryDataModel {
         columns.add(DataSource.Column.number('TotalForks', 16, 0));
         columns.add(DataSource.Column.number('Watchers', 16, 0));
 
-        columns.add(DataSource.Column.text('OwnerLogin'));
+        columns.add(DataSource.Column.text('Owner_Login'));
 
         return DataSource.Table.get(TABLE_NAME, 'Name', columns);
     }
@@ -85,7 +85,7 @@ public class RepositoryDataModel {
         repo.put('Watchers', repo.get('watchers_count'));
 
         Map<String, Object> owner = (Map<String, Object>)repo.get('owner');
-        repo.put('OwnerLogin', owner.get('login'));
+        repo.put('Owner_Login', owner.get('login'));
 
         return repo;
     }

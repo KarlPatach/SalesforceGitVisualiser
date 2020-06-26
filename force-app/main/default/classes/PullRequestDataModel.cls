@@ -95,7 +95,7 @@ public class PullRequestDataModel {
         }
 
         for(Map<String, Object> repo : filteredRepos){
-            pullRequests.addAll(fetchPullRequests((String)repo.get('OwnerLogin'), (String)repo.get('Name')));
+            pullRequests.addAll(fetchPullRequests((String)repo.get('Owner_Login'), (String)repo.get('Name')));
         }
 
         List<Map<String, Object>> prs = DataSource.QueryUtils.process(queryContext, pullRequests);
