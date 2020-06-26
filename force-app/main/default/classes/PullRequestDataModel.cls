@@ -23,7 +23,7 @@ public class PullRequestDataModel {
         columns.add(DataSource.Column.text('Pull_Request_Created_Date'));
         columns.add(DataSource.Column.text('Pull_Request_Updated_Date'));
         columns.add(DataSource.Column.text('Closed_Date'));
-        columns.add(DataSource.Column.text('MergedDate'));
+        columns.add(DataSource.Column.text('Merged_Date'));
         
         columns.add(DataSource.Column.boolean('Merged'));
 
@@ -65,7 +65,7 @@ public class PullRequestDataModel {
         pullRequest.put('Pull_Request_Created_Date', DataUtils.transformDate((String)pullRequest.get('created_at')));
         pullRequest.put('Pull_Request_Updated_Date', DataUtils.transformDate((String)pullRequest.get('updated_at')));
         pullRequest.put('Closed_Date', DataUtils.transformDate((String)pullRequest.get('closed_at')));
-        pullRequest.put('MergedDate', DataUtils.transformDate((String)pullRequest.get('merged_at')));
+        pullRequest.put('Merged_Date', DataUtils.transformDate((String)pullRequest.get('merged_at')));
 
 
         pullRequest.put('Merged', pullRequest.get('merged'));

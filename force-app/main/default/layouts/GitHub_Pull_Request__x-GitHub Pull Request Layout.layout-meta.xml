@@ -23,7 +23,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>MergedDate__c</field>
+                <field>Merged_Date__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>

@@ -106,7 +106,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Pull_Request__x.MergedDate__c</field>
+        <field>GitHub_Pull_Request__x.Merged_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
