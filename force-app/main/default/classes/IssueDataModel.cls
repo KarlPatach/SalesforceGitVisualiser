@@ -19,7 +19,7 @@ public with sharing class IssueDataModel {
         columns.add(DataSource.Column.text('Title'));
         columns.add(DataSource.Column.text('Body'));
         
-        columns.add(DataSource.Column.text('CreatedDate'));
+        columns.add(DataSource.Column.text('Created_Date'));
         columns.add(DataSource.Column.text('UpdatedDate'));
         columns.add(DataSource.Column.text('Closed_Date'));
 
@@ -63,7 +63,7 @@ public with sharing class IssueDataModel {
         issue.put('Body', issue.get('body'));
 
 
-        issue.put('CreatedDate', DataUtils.transformDate((String)issue.get('created_at')));
+        issue.put('Created_Date', DataUtils.transformDate((String)issue.get('created_at')));
         issue.put('UpdatedDate',  DataUtils.transformDate((String)issue.get('updated_at')));
         issue.put('Closed_Date',  DataUtils.transformDate((String)issue.get('closed_at')));
 

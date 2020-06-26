@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>PRCreatedDate__c</fullName>
+    <fullName>Pull_Request_Created_Date__c</fullName>
     <description>PR Created Date</description>
-    <externalDeveloperName>PRCreatedDate</externalDeveloperName>
+    <externalDeveloperName>Pull_Request_Created_Date</externalDeveloperName>
     <externalId>false</externalId>
     <isFilteringDisabled>false</isFilteringDisabled>
     <isNameField>false</isNameField>

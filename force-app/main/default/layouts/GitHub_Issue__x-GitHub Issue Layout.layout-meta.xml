@@ -23,7 +23,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>CreatedDate__c</field>
+                <field>Created_Date__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>

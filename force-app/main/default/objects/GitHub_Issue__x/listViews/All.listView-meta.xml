@@ -5,7 +5,7 @@
     <columns>IssueURL__c</columns>
     <columns>Assignee__c</columns>
     <columns>User__c</columns>
-    <columns>CreatedDate__c</columns>
+    <columns>Created_Date__c</columns>
     <columns>Number__c</columns>
     <columns>State__c</columns>
     <columns>Repository_URL__c</columns>
