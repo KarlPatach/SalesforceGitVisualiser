@@ -27,7 +27,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>IssueURL__c</field>
+                <field>Issue_URL__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>

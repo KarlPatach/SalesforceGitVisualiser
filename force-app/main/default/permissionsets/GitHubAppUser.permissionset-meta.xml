@@ -31,7 +31,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issue__x.IssueURL__c</field>
+        <field>GitHub_Issue__x.Issue_URL__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
