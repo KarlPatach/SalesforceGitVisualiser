@@ -226,12 +226,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Repository__x.RepoCreatedDate__c</field>
+        <field>GitHub_Repository__x.Repository_Created_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Repository__x.RepoUpdatedDate__c</field>
+        <field>GitHub_Repository__x.Repository_Updated_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
