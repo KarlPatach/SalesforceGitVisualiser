@@ -114,14 +114,14 @@
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>InDevelopment</deploymentStatus>
-    <description>GitHub Issues</description>
+    <description>GitHub Issue</description>
     <enableFeeds>false</enableFeeds>
     <enableLicensing>false</enableLicensing>
     <enableReports>false</enableReports>
     <enableSearch>false</enableSearch>
-    <externalDataSource>Repo</externalDataSource>
+    <externalDataSource>GitHub_Data_Source</externalDataSource>
     <externalName>GitHub Issues</externalName>
-    <label>GitHub Issues</label>
+    <label>GitHub Issue</label>
     <pluralLabel>GitHub Issues</pluralLabel>
     <searchLayouts/>
 </CustomObject>

@@ -119,7 +119,7 @@
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
     <enableSearch>false</enableSearch>
-    <externalDataSource>Repo</externalDataSource>
+    <externalDataSource>GitHub_Data_Source</externalDataSource>
     <externalName>GitHub Pull Requests</externalName>
     <label>GitHub Pull Requests</label>
     <pluralLabel>GitHub Pull Requests</pluralLabel>

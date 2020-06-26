@@ -2,7 +2,7 @@
 <ExternalDataSource xmlns="http://soap.sforce.com/2006/04/metadata">
     <customConfiguration>{&quot;noIdMapping&quot;:&quot;false&quot;}</customConfiguration>
     <isWritable>false</isWritable>
-    <label>Repo</label>
+    <label>GitHub Data Source</label>
     <principalType>Anonymous</principalType>
     <protocol>NoAuthentication</protocol>
     <type>GitHubProvider</type>

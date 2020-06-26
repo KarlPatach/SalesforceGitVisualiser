@@ -6,82 +6,82 @@
     </applicationVisibilities>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.AssigneeId__c</field>
+        <field>GitHub_Issue__x.AssigneeId__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.Assignee__c</field>
+        <field>GitHub_Issue__x.Assignee__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.Body__c</field>
+        <field>GitHub_Issue__x.Body__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.ClosedDate__c</field>
+        <field>GitHub_Issue__x.ClosedDate__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.CreatedDate__c</field>
+        <field>GitHub_Issue__x.CreatedDate__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.IssueURL__c</field>
+        <field>GitHub_Issue__x.IssueURL__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.Number__c</field>
+        <field>GitHub_Issue__x.Number__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.OwnerId__c</field>
+        <field>GitHub_Issue__x.OwnerId__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.Owner__c</field>
+        <field>GitHub_Issue__x.Owner__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.PullRequest__c</field>
+        <field>GitHub_Issue__x.PullRequest__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.RepositoryId__c</field>
+        <field>GitHub_Issue__x.RepositoryId__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.RepositoryURL__c</field>
+        <field>GitHub_Issue__x.RepositoryURL__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.State__c</field>
+        <field>GitHub_Issue__x.State__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.Title__c</field>
+        <field>GitHub_Issue__x.Title__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.UpdatedDate__c</field>
+        <field>GitHub_Issue__x.UpdatedDate__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.User__c</field>
+        <field>GitHub_Issue__x.User__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -267,7 +267,7 @@
         <allowEdit>false</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
-        <object>GitHub_Issues__x</object>
+        <object>GitHub_Issue__x</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -289,7 +289,7 @@
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <tabSettings>
-        <tab>GitHub_Issues__x</tab>
+        <tab>GitHub_Issue__x</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
