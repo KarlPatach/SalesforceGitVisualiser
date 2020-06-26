@@ -27,7 +27,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>LanguagesUrl__c</field>
+                <field>LanguagesURL__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
