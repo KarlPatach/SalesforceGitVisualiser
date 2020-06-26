@@ -24,7 +24,7 @@ public class RepositoryDataModel {
         
         columns.add(DataSource.Column.text('Repository_Created_Date'));
         columns.add(DataSource.Column.text('Repository_Updated_Date'));
-        columns.add(DataSource.Column.text('LastPushedDate'));
+        columns.add(DataSource.Column.text('Last_Pushed_Date'));
 
         columns.add(DataSource.Column.boolean('Archived'));
         columns.add(DataSource.Column.boolean('Disabled'));
@@ -71,7 +71,7 @@ public class RepositoryDataModel {
 
         repo.put('Repository_Created_Date', DataUtils.transformDate((String)repo.get('created_at')));
         repo.put('Repository_Updated_Date', DataUtils.transformDate((String)repo.get('updated_at')));
-        repo.put('LastPushedDate', DataUtils.transformDate((String)repo.get('pushed_at')));
+        repo.put('Last_Pushed_Date', DataUtils.transformDate((String)repo.get('pushed_at')));
 
         repo.put('Archived', repo.get('archived'));
         repo.put('Disabled', repo.get('disabled'));

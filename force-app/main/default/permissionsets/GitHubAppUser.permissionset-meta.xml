@@ -196,7 +196,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Repository__x.LastPushedDate__c</field>
+        <field>GitHub_Repository__x.Last_Pushed_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

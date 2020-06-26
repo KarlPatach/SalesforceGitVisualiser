@@ -9,7 +9,7 @@ public with sharing class GitHubRepoController {
             Description__c,
             Repository_Created_Date__c,
             Repository_Updated_Date__c,
-            LastPushedDate__c,
+            Last_Pushed_Date__c,
             Language__c,
             OpenIssuesCount__c,
             Private__c,
@@ -17,7 +17,7 @@ public with sharing class GitHubRepoController {
             Stars__c,
             Size__c            
                from GitHub_Repository__x 
-               ORDER BY LastPushedDate__c DESC
+               ORDER BY Last_Pushed_Date__c DESC
                 LIMIT 1000];
         
         return repoList;

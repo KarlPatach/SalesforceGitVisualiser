@@ -18,7 +18,7 @@ const columns = [
   { label: "Description", fieldName: "Description__c", type: "text" },
   {
     label: "Last Pushed date",
-    fieldName: "LastPushedDate__c",
+    fieldName: "Last_Pushed_Date__c",
     type: "date",
     typeAttributes: {
       year: "numeric",

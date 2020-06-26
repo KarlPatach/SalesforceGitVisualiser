@@ -31,7 +31,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>LastPushedDate__c</field>
+                <field>Last_Pushed_Date__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
