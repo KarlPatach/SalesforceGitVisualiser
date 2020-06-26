@@ -191,7 +191,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Repository__x.LanguagesURL__c</field>
+        <field>GitHub_Repository__x.Languages_URL__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

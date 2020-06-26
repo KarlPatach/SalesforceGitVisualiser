@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>LanguagesURL__c</fullName>
+    <fullName>Languages_URL__c</fullName>
     <description>Languages URL</description>
-    <externalDeveloperName>LanguagesURL</externalDeveloperName>
+    <externalDeveloperName>Languages_URL</externalDeveloperName>
     <externalId>false</externalId>
     <isFilteringDisabled>false</isFilteringDisabled>
     <isNameField>false</isNameField>
