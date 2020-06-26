@@ -19,7 +19,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>ClosedDate__c</field>
+                <field>Closed_Date__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
