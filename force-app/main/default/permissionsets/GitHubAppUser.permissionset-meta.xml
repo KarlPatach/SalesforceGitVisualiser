@@ -76,7 +76,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issue__x.UpdatedDate__c</field>
+        <field>GitHub_Issue__x.Updated_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -136,7 +136,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Pull_Request__x.PRUpdatedDate__c</field>
+        <field>GitHub_Pull_Request__x.Pull_Request_Updated_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -161,7 +161,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Pull_Request__x.UpdatedDate__c</field>
+        <field>GitHub_Pull_Request__x.Updated_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

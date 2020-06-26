@@ -63,7 +63,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>UpdatedDate__c</field>
+                <field>Updated_Date__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>

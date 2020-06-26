@@ -43,7 +43,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>PRUpdatedDate__c</field>
+                <field>Pull_Request_Updated_Date__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
