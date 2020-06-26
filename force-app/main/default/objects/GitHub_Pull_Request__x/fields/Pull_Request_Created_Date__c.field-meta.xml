@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Pull_Request_Created_Date__c</fullName>
-    <description>PR Created Date</description>
+    <description>Pull Request Created Date</description>
     <externalDeveloperName>Pull_Request_Created_Date</externalDeveloperName>
     <externalId>false</externalId>
     <isFilteringDisabled>false</isFilteringDisabled>
     <isNameField>false</isNameField>
     <isSortingDisabled>false</isSortingDisabled>
-    <label>PR Created Date</label>
+    <label>Pull Request Created Date</label>
     <length>255</length>
     <required>false</required>
     <type>Text</type>

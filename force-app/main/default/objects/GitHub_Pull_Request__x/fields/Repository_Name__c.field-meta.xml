@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Repository_Name__c</fullName>
-    <description>Repo Name</description>
+    <description>Repository Name</description>
     <externalDeveloperName>Repository_Name</externalDeveloperName>
     <externalId>false</externalId>
     <isFilteringDisabled>false</isFilteringDisabled>
     <isNameField>false</isNameField>
     <isSortingDisabled>false</isSortingDisabled>
-    <label>Repo Name</label>
+    <label>Repository Name</label>
     <length>255</length>
     <required>false</required>
     <type>Text</type>

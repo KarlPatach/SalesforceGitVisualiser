@@ -7,7 +7,9 @@ public class PullRequestDataModel {
         columns.add(DataSource.Column.text('ExternalId', 255));
         columns.add(DataSource.Column.url('DisplayUrl'));
 
-        columns.add(DataSource.Column.url('Pull_Request_URL'));
+        DataSource.Column pullRequestUrl = DataSource.Column.url('Pull_Request_URL');
+        pullRequestUrl.label = 'Pull Request Url';
+        columns.add(pullRequestUrl);
         
         columns.add(DataSource.Column.boolean('Draft'));
         
@@ -20,17 +22,20 @@ public class PullRequestDataModel {
         columns.add(DataSource.Column.text('Owner'));
         columns.add(DataSource.Column.text('OwnerId'));
         
-        columns.add(DataSource.Column.text('Pull_Request_Created_Date'));
-        columns.add(DataSource.Column.text('Pull_Request_Updated_Date'));
-        columns.add(DataSource.Column.text('Closed_Date'));
-        columns.add(DataSource.Column.text('Merged_Date'));
+        columns.add(DataSource.Column.text('Pull_Request_Created_Date', 'Pull Request Created Date', 255));
+        columns.add(DataSource.Column.text('Pull_Request_Updated_Date', 'Pull Request Updated Date', 255));
+        columns.add(DataSource.Column.text('Closed_Date', 'Closed Date', 255));
+        columns.add(DataSource.Column.text('Merged_Date', 'Merged Date', 255));
         
         columns.add(DataSource.Column.boolean('Merged'));
 
         //parent id
-        columns.add(DataSource.Column.text('Repository_Name'));
+        columns.add(DataSource.Column.text('Repository_Name', 'Repository Name', 255));
         
-        return DataSource.Table.get(TABLE_NAME, 'Number', columns);
+        DataSource.Table pullRequestTable = DataSource.Table.get(TABLE_NAME, 'Number', columns);
+        pullRequestTable.labelSingular = 'GitHub Pull Request';
+        pullRequestTable.labelPlural = 'GitHub Pull Requests';
+        return pullRequestTable;
     } 
     
     //Test Only
