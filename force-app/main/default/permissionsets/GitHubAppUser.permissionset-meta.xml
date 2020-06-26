@@ -51,7 +51,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issue__x.PullRequest__c</field>
+        <field>GitHub_Issue__x.Pull_Request__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -141,7 +141,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Pull_Request__x.PullRequestURL__c</field>
+        <field>GitHub_Pull_Request__x.Pull_Request_URL__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

@@ -2,7 +2,7 @@
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Open_Pull_Requests</fullName>
     <columns>Number__c</columns>
-    <columns>PullRequestURL__c</columns>
+    <columns>Pull_Request_URL__c</columns>
     <columns>RepoName__c</columns>
     <columns>State__c</columns>
     <columns>Title__c</columns>

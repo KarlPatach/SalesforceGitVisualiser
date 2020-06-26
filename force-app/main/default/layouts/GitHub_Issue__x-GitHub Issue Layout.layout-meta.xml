@@ -43,7 +43,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>PullRequest__c</field>
+                <field>Pull_Request__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>

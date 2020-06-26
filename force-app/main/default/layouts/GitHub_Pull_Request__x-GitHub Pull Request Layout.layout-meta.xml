@@ -47,7 +47,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>PullRequestURL__c</field>
+                <field>Pull_Request_URL__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>

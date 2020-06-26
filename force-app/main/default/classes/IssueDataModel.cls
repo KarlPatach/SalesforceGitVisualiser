@@ -30,7 +30,7 @@ public with sharing class IssueDataModel {
         columns.add(DataSource.Column.text('AssigneeId'));
         columns.add(DataSource.Column.text('User'));
       
-        columns.add(DataSource.Column.url('PullRequest'));
+        columns.add(DataSource.Column.url('Pull_Request'));
         
         return DataSource.Table.get(TABLE_NAME, 'Number', columns);
     } 
@@ -86,7 +86,7 @@ public with sharing class IssueDataModel {
 
         Map<String,Object> pullRequest=(Map<String,Object>)issue.get('pull_request');
         if(pullRequest!=null && pullRequest.containsKey('url')){
-          issue.put('PullRequest', pullRequest.get('url'));
+          issue.put('Pull_Request', pullRequest.get('url'));
         }
         
         return issue;

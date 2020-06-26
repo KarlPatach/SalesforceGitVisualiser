@@ -12,7 +12,7 @@
     <columns>RepositoryId__c</columns>
     <filterScope>Everything</filterScope>
     <filters>
-        <field>PullRequest__c</field>
+        <field>Pull_Request__c</field>
         <operation>equals</operation>
     </filters>
     <filters>

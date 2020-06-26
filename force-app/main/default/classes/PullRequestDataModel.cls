@@ -7,7 +7,7 @@ public class PullRequestDataModel {
         columns.add(DataSource.Column.text('ExternalId', 255));
         columns.add(DataSource.Column.url('DisplayUrl'));
 
-        columns.add(DataSource.Column.url('PullRequestURL'));
+        columns.add(DataSource.Column.url('Pull_Request_URL'));
         
         columns.add(DataSource.Column.boolean('Draft'));
         
@@ -51,7 +51,7 @@ public class PullRequestDataModel {
 
         pullRequest.put('DisplayUrl', pullRequest.get('url'));
 
-        pullRequest.put('PullRequestURL', ApiUtils.apiUrlToGitHub((String)pullRequest.get('url')));
+        pullRequest.put('Pull_Request_URL', ApiUtils.apiUrlToGitHub((String)pullRequest.get('url')));
 
         pullRequest.put('Draft', pullRequest.get('draft'));
 
