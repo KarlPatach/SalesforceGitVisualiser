@@ -8,7 +8,7 @@ public with sharing class IssueDataModel {
         columns.add(DataSource.Column.url('DisplayUrl'));
 
 
-        columns.add(DataSource.Column.url('RepositoryURL'));
+        columns.add(DataSource.Column.url('Repository_URL'));
         columns.add(DataSource.Column.text('RepositoryId'));
         columns.add(DataSource.Column.url('IssueURL'));
         
@@ -53,7 +53,7 @@ public with sharing class IssueDataModel {
 
         issue.put('DisplayUrl', issue.get('url'));
 
-        issue.put('RepositoryURL', ApiUtils.apiUrlToGitHub((String)issue.get('repository_url')));
+        issue.put('Repository_URL', ApiUtils.apiUrlToGitHub((String)issue.get('repository_url')));
         issue.put('IssueURL', ApiUtils.apiUrlToGitHub((String)issue.get('url')));
 
         issue.put('Number', issue.get('number'));

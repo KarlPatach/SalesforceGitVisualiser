@@ -8,7 +8,7 @@
     <columns>CreatedDate__c</columns>
     <columns>Number__c</columns>
     <columns>State__c</columns>
-    <columns>RepositoryURL__c</columns>
+    <columns>Repository_URL__c</columns>
     <columns>RepositoryId__c</columns>
     <filterScope>Everything</filterScope>
     <filters>

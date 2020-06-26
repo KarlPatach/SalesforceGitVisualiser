@@ -61,7 +61,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issue__x.RepositoryURL__c</field>
+        <field>GitHub_Issue__x.Repository_URL__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -236,7 +236,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Repository__x.RepositoryURL__c</field>
+        <field>GitHub_Repository__x.Repository_URL__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

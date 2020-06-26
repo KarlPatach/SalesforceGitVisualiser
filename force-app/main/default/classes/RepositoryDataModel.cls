@@ -15,7 +15,7 @@ public class RepositoryDataModel {
         columns.add(DataSource.Column.url('DisplayUrl'));
 
 
-        columns.add(DataSource.Column.url('RepositoryURL'));
+        columns.add(DataSource.Column.url('Repository_URL'));
 
 
         columns.add(DataSource.Column.url('Languages_URL'));
@@ -64,7 +64,7 @@ public class RepositoryDataModel {
         repo.put('Fork', repo.get('fork'));
 
         repo.put('DisplayUrl', repo.get('html_url'));
-        repo.put('RepositoryURL', repo.get('html_url'));
+        repo.put('Repository_URL', repo.get('html_url'));
         repo.put('Languages_URL', repo.get('languages_url'));
 
         repo.put('Language', repo.get('language'));
