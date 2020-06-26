@@ -13,7 +13,7 @@ public with sharing class GitHubRepoController {
             Language__c,
             Open_Issues_Count__c,
             Private__c,
-            TotalForks__c,
+            Total_Forks__c,
             Stars__c,
             Size__c            
                from GitHub_Repository__x 

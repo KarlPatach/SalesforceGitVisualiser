@@ -75,7 +75,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>TotalForks__c</field>
+                <field>Total_Forks__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
