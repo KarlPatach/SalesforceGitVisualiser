@@ -7,10 +7,15 @@ public with sharing class IssueDataModel {
         columns.add(DataSource.Column.text('ExternalId', 255));
         columns.add(DataSource.Column.url('DisplayUrl'));
 
+        DataSource.Column repositoryUrl = DataSource.Column.url('Repository_URL');
+        repositoryUrl.label = 'Repository Url';
+        columns.add(repositoryUrl);
 
-        columns.add(DataSource.Column.url('Repository_URL'));
         columns.add(DataSource.Column.text('RepositoryId'));
-        columns.add(DataSource.Column.url('Issue_URL'));
+        
+        DataSource.Column issueUrl = DataSource.Column.url('Issue_URL');
+        issueUrl.label = 'Issue Url';
+        columns.add(issueUrl);
         
         
         columns.add(DataSource.Column.number('Number', 16, 0));
@@ -19,9 +24,9 @@ public with sharing class IssueDataModel {
         columns.add(DataSource.Column.text('Title'));
         columns.add(DataSource.Column.text('Body'));
         
-        columns.add(DataSource.Column.text('Created_Date'));
-        columns.add(DataSource.Column.text('Updated_Date'));
-        columns.add(DataSource.Column.text('Closed_Date'));
+        columns.add(DataSource.Column.text('Created_Date', 'Created Date', 255));
+        columns.add(DataSource.Column.text('Updated_Date', 'Updated Date', 255));
+        columns.add(DataSource.Column.text('Closed_Date', 'Closed Date', 255));
 
         columns.add(DataSource.Column.text('Owner'));
         columns.add(DataSource.Column.text('OwnerId'));
@@ -30,9 +35,14 @@ public with sharing class IssueDataModel {
         columns.add(DataSource.Column.text('AssigneeId'));
         columns.add(DataSource.Column.text('User'));
       
-        columns.add(DataSource.Column.url('Pull_Request'));
+        DataSource.Column pullRequest = DataSource.Column.url('Pull_Request');
+        pullRequest.label = 'Pull Request';
+        columns.add(pullRequest);
         
-        return DataSource.Table.get(TABLE_NAME, 'Number', columns);
+        DataSource.Table issueTable = DataSource.Table.get(TABLE_NAME, 'Number', columns);
+        issueTable.labelSingular = 'GitHub Issue';
+        issueTable.labelPlural = 'GitHub Issues';
+        return issueTable;
     } 
     
     //Test Only

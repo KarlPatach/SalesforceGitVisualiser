@@ -47,11 +47,11 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>RepositoryId__c</field>
+                <field>Repository_URL__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Repository_URL__c</field>
+                <field>RepositoryId__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
