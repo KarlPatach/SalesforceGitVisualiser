@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Open_Issues_Count__c</fullName>
-    <description>Open Issues Count</description>
+    <description>Open_Issues_Count</description>
     <externalDeveloperName>Open_Issues_Count</externalDeveloperName>
     <externalId>false</externalId>
     <isFilteringDisabled>false</isFilteringDisabled>

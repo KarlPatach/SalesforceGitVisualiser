@@ -14,32 +14,43 @@ public class RepositoryDataModel {
 
         columns.add(DataSource.Column.url('DisplayUrl'));
 
+        DataSource.Column repositoryUrlColumn = DataSource.Column.url('Repository_URL');
+        repositoryUrlColumn.label = 'Repository URL';
+        columns.add(repositoryUrlColumn);
 
-        columns.add(DataSource.Column.url('Repository_URL'));
-
-
-        columns.add(DataSource.Column.url('Languages_URL'));
+        DataSource.Column languaguesUrlColumn = DataSource.Column.url('Languages_URL');
+        languaguesUrlColumn.label = 'Languages URL';
+        columns.add(languaguesUrlColumn);
 
         columns.add(DataSource.Column.text('Language'));
         
-        columns.add(DataSource.Column.text('Repository_Created_Date'));
-        columns.add(DataSource.Column.text('Repository_Updated_Date'));
-        columns.add(DataSource.Column.text('Last_Pushed_Date'));
+        columns.add(DataSource.Column.text('Repository_Created_Date', 'Repository Created Date', 255));
+        columns.add(DataSource.Column.text('Repository_Updated_Date', 'Repository Updated Date', 255));
+        columns.add(DataSource.Column.text('Last_Pushed_Date', 'Last Pushed Date', 255));
 
         columns.add(DataSource.Column.boolean('Archived'));
         columns.add(DataSource.Column.boolean('Disabled'));
 
-        columns.add(DataSource.Column.number('Open_Issues_Count', 16, 0));
+        DataSource.Column openIssuesCount = DataSource.Column.number('Open_Issues_Count', 16, 0);
+        openIssuesCount.label = 'Open Issues Count';
+        columns.add(openIssuesCount);
 
         columns.add(DataSource.Column.text('License'));
 
         columns.add(DataSource.Column.number('Size', 16, 0));
-        columns.add(DataSource.Column.number('Total_Forks', 16, 0));
+
+        DataSource.Column totalForks = DataSource.Column.number('Total_Forks', 16, 0);
+        totalForks.label = 'Total Forks';
+        columns.add(totalForks);
+        
         columns.add(DataSource.Column.number('Watchers', 16, 0));
 
-        columns.add(DataSource.Column.text('Owner_Login'));
-
-        return DataSource.Table.get(TABLE_NAME, 'Name', columns);
+        columns.add(DataSource.Column.text('Owner_Login', 'Owner Login', 255));
+        
+        Datasource.Table repositoryTable = DataSource.Table.get(TABLE_NAME, 'Name', columns);
+        repositoryTable.labelPlural = 'GitHub Repositories';
+        repositoryTable.labelSingular = 'GitHub Repository';
+        return repositoryTable;
     }
 
     private static List<Map<String, Object>> getRepositories(String content){

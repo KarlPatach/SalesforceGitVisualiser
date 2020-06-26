@@ -7,7 +7,7 @@
     <isFilteringDisabled>false</isFilteringDisabled>
     <isNameField>false</isNameField>
     <isSortingDisabled>false</isSortingDisabled>
-    <label>Repo Updated Date</label>
+    <label>Repository Updated Date</label>
     <length>255</length>
     <required>false</required>
     <type>Text</type>
