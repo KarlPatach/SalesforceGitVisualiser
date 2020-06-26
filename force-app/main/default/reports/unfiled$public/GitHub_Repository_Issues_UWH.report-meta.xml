@@ -7,12 +7,12 @@
         <chartSummaries>
             <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>GitHub_Repos__x.OpenIssuesCount__c</column>
+            <column>GitHub_Repository__x.OpenIssuesCount__c</column>
         </chartSummaries>
         <chartType>Donut</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>false</expandOthers>
-        <groupingColumn>GitHub_Repos__x.Name__c</groupingColumn>
+        <groupingColumn>GitHub_Repository__x.Name__c</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
         <showAxisLabels>false</showAxisLabels>
@@ -29,14 +29,14 @@
     </chart>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>GitHub_Repos__x.OpenIssuesCount__c</field>
+        <field>GitHub_Repository__x.OpenIssuesCount__c</field>
     </columns>
     <format>Summary</format>
     <groupingsDown>
         <aggregateType>Sum</aggregateType>
         <dateGranularity>Day</dateGranularity>
-        <field>GitHub_Repos__x.Name__c</field>
-        <sortByName>GitHub_Repos__x.OpenIssuesCount__c</sortByName>
+        <field>GitHub_Repository__x.Name__c</field>
+        <sortByName>GitHub_Repository__x.OpenIssuesCount__c</sortByName>
         <sortOrder>Desc</sortOrder>
         <sortType>Aggregate</sortType>
     </groupingsDown>
@@ -45,11 +45,11 @@
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>CustomEntity$GitHub_Repos__x</reportType>
+    <reportType>CustomEntity$GitHub_Repository__x</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>GitHub_Repos__x.OpenIssuesCount__c</sortColumn>
+    <sortColumn>GitHub_Repository__x.OpenIssuesCount__c</sortColumn>
     <sortOrder>Desc</sortOrder>
 </Report>

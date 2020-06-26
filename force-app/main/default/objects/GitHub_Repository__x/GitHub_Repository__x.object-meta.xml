@@ -114,14 +114,14 @@
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>InDevelopment</deploymentStatus>
-    <description>GitHub Repos</description>
+    <description>GitHub Repo</description>
     <enableFeeds>false</enableFeeds>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
     <enableSearch>false</enableSearch>
     <externalDataSource>GitHub_Data_Source</externalDataSource>
     <externalName>GitHub Repos</externalName>
-    <label>GitHub Repos</label>
+    <label>GitHub Repo</label>
     <pluralLabel>GitHub Repos</pluralLabel>
     <searchLayouts/>
 </CustomObject>

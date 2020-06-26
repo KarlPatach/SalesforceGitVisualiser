@@ -1,8 +1,8 @@
 public with sharing class GitHubRepoController {
     @AuraEnabled(cacheable=true)
-    public static List<GitHub_Repos__x> fetchGitHubRepos() {
+    public static List<GitHub_Repository__x> fetchGitHubRepos() {
         
-        List<GitHub_Repos__x> repoList = [
+        List<GitHub_Repository__x> repoList = [
             SELECT Id, 
             DisplayUrl,
             Name__c,
@@ -16,7 +16,7 @@ public with sharing class GitHubRepoController {
             TotalForks__c,
             Stars__c,
             Size__c            
-               from GitHub_Repos__x 
+               from GitHub_Repository__x 
                ORDER BY LastPushedDate__c DESC
                 LIMIT 1000];
         
