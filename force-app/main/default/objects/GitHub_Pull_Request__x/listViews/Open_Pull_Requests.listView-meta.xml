@@ -3,7 +3,7 @@
     <fullName>Open_Pull_Requests</fullName>
     <columns>Number__c</columns>
     <columns>Pull_Request_URL__c</columns>
-    <columns>RepoName__c</columns>
+    <columns>Repository_Name__c</columns>
     <columns>State__c</columns>
     <columns>Title__c</columns>
     <columns>Owner__c</columns>

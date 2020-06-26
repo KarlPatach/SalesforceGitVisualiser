@@ -28,7 +28,7 @@ public class PullRequestDataModel {
         columns.add(DataSource.Column.boolean('Merged'));
 
         //parent id
-        columns.add(DataSource.Column.text('RepoName'));
+        columns.add(DataSource.Column.text('Repository_Name'));
         
         return DataSource.Table.get(TABLE_NAME, 'Number', columns);
     } 
@@ -77,7 +77,7 @@ public class PullRequestDataModel {
 
         Map<String,Object> base=(Map<String,Object>)pullRequest.get('base');
         Map<String,Object> repo=(Map<String,Object>)base.get('repo');
-        pullRequest.put('RepoName', repo.get('name'));
+        pullRequest.put('Repository_Name', repo.get('name'));
         
         return pullRequest;
     } 

@@ -3,7 +3,7 @@
     <fullName>All</fullName>
     <columns>Number__c</columns>
     <columns>DisplayUrl</columns>
-    <columns>RepoName__c</columns>
+    <columns>Repository_Name__c</columns>
     <columns>State__c</columns>
     <columns>Title__c</columns>
     <columns>Owner__c</columns>

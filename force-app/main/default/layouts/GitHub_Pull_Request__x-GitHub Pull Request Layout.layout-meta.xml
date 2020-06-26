@@ -51,7 +51,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>RepoName__c</field>
+                <field>Repository_Name__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
