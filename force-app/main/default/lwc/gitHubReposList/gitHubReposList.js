@@ -39,7 +39,7 @@ const columns = [
   },
   {
     label: "Open Issues",
-    fieldName: "OpenIssuesCount__c",
+    fieldName: "Open_Issues_Count__c",
     type: "number",
     initialWidth: 120,
     hideDefaultActions: true,

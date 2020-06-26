@@ -11,7 +11,7 @@ public with sharing class GitHubRepoController {
             Repository_Updated_Date__c,
             Last_Pushed_Date__c,
             Language__c,
-            OpenIssuesCount__c,
+            Open_Issues_Count__c,
             Private__c,
             TotalForks__c,
             Stars__c,

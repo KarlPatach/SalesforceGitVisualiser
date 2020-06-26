@@ -29,7 +29,7 @@ public class RepositoryDataModel {
         columns.add(DataSource.Column.boolean('Archived'));
         columns.add(DataSource.Column.boolean('Disabled'));
 
-        columns.add(DataSource.Column.number('OpenIssuesCount', 16, 0));
+        columns.add(DataSource.Column.number('Open_Issues_Count', 16, 0));
 
         columns.add(DataSource.Column.text('License'));
 
@@ -76,7 +76,7 @@ public class RepositoryDataModel {
         repo.put('Archived', repo.get('archived'));
         repo.put('Disabled', repo.get('disabled'));
 
-        repo.put('OpenIssuesCount', repo.get('open_issues_count'));
+        repo.put('Open_Issues_Count', repo.get('open_issues_count'));
 
         repo.put('License', repo.get('license'));
 
