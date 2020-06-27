@@ -1,5 +1,5 @@
 public with sharing class IssueDataModel {
-    public static final String TABLE_NAME = 'GitHub Issues';
+    public static final String TABLE_NAME = 'GitHub Issue';
     
     public static DataSource.Table buildTable(){
         List<DataSource.Column> columns = new List<DataSource.Column>();
@@ -7,10 +7,15 @@ public with sharing class IssueDataModel {
         columns.add(DataSource.Column.text('ExternalId', 255));
         columns.add(DataSource.Column.url('DisplayUrl'));
 
+        DataSource.Column repositoryUrl = DataSource.Column.url('Repository_URL');
+        repositoryUrl.label = 'Repository Url';
+        columns.add(repositoryUrl);
 
-        columns.add(DataSource.Column.url('RepositoryURL'));
         columns.add(DataSource.Column.text('RepositoryId'));
-        columns.add(DataSource.Column.url('IssueURL'));
+        
+        DataSource.Column issueUrl = DataSource.Column.url('Issue_URL');
+        issueUrl.label = 'Issue Url';
+        columns.add(issueUrl);
         
         
         columns.add(DataSource.Column.number('Number', 16, 0));
@@ -19,9 +24,9 @@ public with sharing class IssueDataModel {
         columns.add(DataSource.Column.text('Title'));
         columns.add(DataSource.Column.text('Body'));
         
-        columns.add(DataSource.Column.text('CreatedDate'));
-        columns.add(DataSource.Column.text('UpdatedDate'));
-        columns.add(DataSource.Column.text('ClosedDate'));
+        columns.add(DataSource.Column.text('Created_Date', 'Created Date', 255));
+        columns.add(DataSource.Column.text('Updated_Date', 'Updated Date', 255));
+        columns.add(DataSource.Column.text('Closed_Date', 'Closed Date', 255));
 
         columns.add(DataSource.Column.text('Owner'));
         columns.add(DataSource.Column.text('OwnerId'));
@@ -30,9 +35,14 @@ public with sharing class IssueDataModel {
         columns.add(DataSource.Column.text('AssigneeId'));
         columns.add(DataSource.Column.text('User'));
       
-        columns.add(DataSource.Column.url('PullRequest'));
+        DataSource.Column pullRequest = DataSource.Column.url('Pull_Request');
+        pullRequest.label = 'Pull Request';
+        columns.add(pullRequest);
         
-        return DataSource.Table.get(TABLE_NAME, 'Number', columns);
+        DataSource.Table issueTable = DataSource.Table.get(TABLE_NAME, 'Number', columns);
+        issueTable.labelSingular = 'GitHub Issue';
+        issueTable.labelPlural = 'GitHub Issues';
+        return issueTable;
     } 
     
     //Test Only
@@ -53,8 +63,8 @@ public with sharing class IssueDataModel {
 
         issue.put('DisplayUrl', issue.get('url'));
 
-        issue.put('RepositoryURL', ApiUtils.apiUrlToGitHub((String)issue.get('repository_url')));
-        issue.put('IssueURL', ApiUtils.apiUrlToGitHub((String)issue.get('url')));
+        issue.put('Repository_URL', ApiUtils.apiUrlToGitHub((String)issue.get('repository_url')));
+        issue.put('Issue_URL', ApiUtils.apiUrlToGitHub((String)issue.get('url')));
 
         issue.put('Number', issue.get('number'));
 
@@ -63,9 +73,9 @@ public with sharing class IssueDataModel {
         issue.put('Body', issue.get('body'));
 
 
-        issue.put('CreatedDate', DataUtils.transformDate((String)issue.get('created_at')));
-        issue.put('UpdatedDate',  DataUtils.transformDate((String)issue.get('updated_at')));
-        issue.put('ClosedDate',  DataUtils.transformDate((String)issue.get('closed_at')));
+        issue.put('Created_Date', DataUtils.transformDate((String)issue.get('created_at')));
+        issue.put('Updated_Date',  DataUtils.transformDate((String)issue.get('updated_at')));
+        issue.put('Closed_Date',  DataUtils.transformDate((String)issue.get('closed_at')));
 
 
         Map<String,Object> user=(Map<String,Object>)issue.get('user');
@@ -86,7 +96,7 @@ public with sharing class IssueDataModel {
 
         Map<String,Object> pullRequest=(Map<String,Object>)issue.get('pull_request');
         if(pullRequest!=null && pullRequest.containsKey('url')){
-          issue.put('PullRequest', pullRequest.get('url'));
+          issue.put('Pull_Request', pullRequest.get('url'));
         }
         
         return issue;

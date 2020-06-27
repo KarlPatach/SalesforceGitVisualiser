@@ -1,5 +1,5 @@
 public class PullRequestDataModel {
-    public static final String TABLE_NAME = 'GitHub Pull Requests';
+    public static final String TABLE_NAME = 'GitHub Pull Request';
     
     public static DataSource.Table buildTable(){
         List<DataSource.Column> columns = new List<DataSource.Column>();
@@ -7,7 +7,9 @@ public class PullRequestDataModel {
         columns.add(DataSource.Column.text('ExternalId', 255));
         columns.add(DataSource.Column.url('DisplayUrl'));
 
-        columns.add(DataSource.Column.url('PullRequestURL'));
+        DataSource.Column pullRequestUrl = DataSource.Column.url('Pull_Request_URL');
+        pullRequestUrl.label = 'Pull Request Url';
+        columns.add(pullRequestUrl);
         
         columns.add(DataSource.Column.boolean('Draft'));
         
@@ -20,17 +22,20 @@ public class PullRequestDataModel {
         columns.add(DataSource.Column.text('Owner'));
         columns.add(DataSource.Column.text('OwnerId'));
         
-        columns.add(DataSource.Column.text('PRCreatedDate'));
-        columns.add(DataSource.Column.text('PRUpdatedDate'));
-        columns.add(DataSource.Column.text('ClosedDate'));
-        columns.add(DataSource.Column.text('MergedDate'));
+        columns.add(DataSource.Column.text('Pull_Request_Created_Date', 'Pull Request Created Date', 255));
+        columns.add(DataSource.Column.text('Pull_Request_Updated_Date', 'Pull Request Updated Date', 255));
+        columns.add(DataSource.Column.text('Closed_Date', 'Closed Date', 255));
+        columns.add(DataSource.Column.text('Merged_Date', 'Merged Date', 255));
         
         columns.add(DataSource.Column.boolean('Merged'));
 
         //parent id
-        columns.add(DataSource.Column.text('RepoName'));
+        columns.add(DataSource.Column.text('Repository_Name', 'Repository Name', 255));
         
-        return DataSource.Table.get(TABLE_NAME, 'Number', columns);
+        DataSource.Table pullRequestTable = DataSource.Table.get(TABLE_NAME, 'Number', columns);
+        pullRequestTable.labelSingular = 'GitHub Pull Request';
+        pullRequestTable.labelPlural = 'GitHub Pull Requests';
+        return pullRequestTable;
     } 
     
     //Test Only
@@ -51,7 +56,7 @@ public class PullRequestDataModel {
 
         pullRequest.put('DisplayUrl', pullRequest.get('url'));
 
-        pullRequest.put('PullRequestURL', ApiUtils.apiUrlToGitHub((String)pullRequest.get('url')));
+        pullRequest.put('Pull_Request_URL', ApiUtils.apiUrlToGitHub((String)pullRequest.get('url')));
 
         pullRequest.put('Draft', pullRequest.get('draft'));
 
@@ -62,10 +67,10 @@ public class PullRequestDataModel {
         pullRequest.put('Body', pullRequest.get('body'));
 
 
-        pullRequest.put('PRCreatedDate', DataUtils.transformDate((String)pullRequest.get('created_at')));
-        pullRequest.put('PRUpdatedDate', DataUtils.transformDate((String)pullRequest.get('updated_at')));
-        pullRequest.put('ClosedDate', DataUtils.transformDate((String)pullRequest.get('closed_at')));
-        pullRequest.put('MergedDate', DataUtils.transformDate((String)pullRequest.get('merged_at')));
+        pullRequest.put('Pull_Request_Created_Date', DataUtils.transformDate((String)pullRequest.get('created_at')));
+        pullRequest.put('Pull_Request_Updated_Date', DataUtils.transformDate((String)pullRequest.get('updated_at')));
+        pullRequest.put('Closed_Date', DataUtils.transformDate((String)pullRequest.get('closed_at')));
+        pullRequest.put('Merged_Date', DataUtils.transformDate((String)pullRequest.get('merged_at')));
 
 
         pullRequest.put('Merged', pullRequest.get('merged'));
@@ -77,7 +82,7 @@ public class PullRequestDataModel {
 
         Map<String,Object> base=(Map<String,Object>)pullRequest.get('base');
         Map<String,Object> repo=(Map<String,Object>)base.get('repo');
-        pullRequest.put('RepoName', repo.get('name'));
+        pullRequest.put('Repository_Name', repo.get('name'));
         
         return pullRequest;
     } 
@@ -95,7 +100,7 @@ public class PullRequestDataModel {
         }
 
         for(Map<String, Object> repo : filteredRepos){
-            pullRequests.addAll(fetchPullRequests((String)repo.get('OwnerLogin'), (String)repo.get('Name')));
+            pullRequests.addAll(fetchPullRequests((String)repo.get('Owner_Login'), (String)repo.get('Name')));
         }
 
         List<Map<String, Object>> prs = DataSource.QueryUtils.process(queryContext, pullRequests);

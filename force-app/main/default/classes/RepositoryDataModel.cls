@@ -1,5 +1,5 @@
 public class RepositoryDataModel {
-    public static final String TABLE_NAME = 'GitHub Repos';
+    public static final String TABLE_NAME = 'GitHub Repository';
 
     public static DataSource.Table buildTable(){
         List<DataSource.Column> columns = new List<DataSource.Column>();
@@ -14,32 +14,43 @@ public class RepositoryDataModel {
 
         columns.add(DataSource.Column.url('DisplayUrl'));
 
+        DataSource.Column repositoryUrlColumn = DataSource.Column.url('Repository_URL');
+        repositoryUrlColumn.label = 'Repository URL';
+        columns.add(repositoryUrlColumn);
 
-        columns.add(DataSource.Column.url('RepositoryURL'));
-
-
-        columns.add(DataSource.Column.url('LanguagesUrl'));
+        DataSource.Column languaguesUrlColumn = DataSource.Column.url('Languages_URL');
+        languaguesUrlColumn.label = 'Languages URL';
+        columns.add(languaguesUrlColumn);
 
         columns.add(DataSource.Column.text('Language'));
         
-        columns.add(DataSource.Column.text('RepoCreatedDate'));
-        columns.add(DataSource.Column.text('RepoUpdatedDate'));
-        columns.add(DataSource.Column.text('LastPushedDate'));
+        columns.add(DataSource.Column.text('Repository_Created_Date', 'Repository Created Date', 255));
+        columns.add(DataSource.Column.text('Repository_Updated_Date', 'Repository Updated Date', 255));
+        columns.add(DataSource.Column.text('Last_Pushed_Date', 'Last Pushed Date', 255));
 
         columns.add(DataSource.Column.boolean('Archived'));
         columns.add(DataSource.Column.boolean('Disabled'));
 
-        columns.add(DataSource.Column.number('OpenIssuesCount', 16, 0));
+        DataSource.Column openIssuesCount = DataSource.Column.number('Open_Issues_Count', 16, 0);
+        openIssuesCount.label = 'Open Issues Count';
+        columns.add(openIssuesCount);
 
         columns.add(DataSource.Column.text('License'));
 
         columns.add(DataSource.Column.number('Size', 16, 0));
-        columns.add(DataSource.Column.number('TotalForks', 16, 0));
+
+        DataSource.Column totalForks = DataSource.Column.number('Total_Forks', 16, 0);
+        totalForks.label = 'Total Forks';
+        columns.add(totalForks);
+        
         columns.add(DataSource.Column.number('Watchers', 16, 0));
 
-        columns.add(DataSource.Column.text('OwnerLogin'));
-
-        return DataSource.Table.get(TABLE_NAME, 'Name', columns);
+        columns.add(DataSource.Column.text('Owner_Login', 'Owner Login', 255));
+        
+        Datasource.Table repositoryTable = DataSource.Table.get(TABLE_NAME, 'Name', columns);
+        repositoryTable.labelPlural = 'GitHub Repositories';
+        repositoryTable.labelSingular = 'GitHub Repository';
+        return repositoryTable;
     }
 
     private static List<Map<String, Object>> getRepositories(String content){
@@ -64,28 +75,28 @@ public class RepositoryDataModel {
         repo.put('Fork', repo.get('fork'));
 
         repo.put('DisplayUrl', repo.get('html_url'));
-        repo.put('RepositoryURL', repo.get('html_url'));
-        repo.put('LanguagesUrl', repo.get('languages_url'));
+        repo.put('Repository_URL', repo.get('html_url'));
+        repo.put('Languages_URL', repo.get('languages_url'));
 
         repo.put('Language', repo.get('language'));
 
-        repo.put('RepoCreatedDate', DataUtils.transformDate((String)repo.get('created_at')));
-        repo.put('RepoUpdatedDate', DataUtils.transformDate((String)repo.get('updated_at')));
-        repo.put('LastPushedDate', DataUtils.transformDate((String)repo.get('pushed_at')));
+        repo.put('Repository_Created_Date', DataUtils.transformDate((String)repo.get('created_at')));
+        repo.put('Repository_Updated_Date', DataUtils.transformDate((String)repo.get('updated_at')));
+        repo.put('Last_Pushed_Date', DataUtils.transformDate((String)repo.get('pushed_at')));
 
         repo.put('Archived', repo.get('archived'));
         repo.put('Disabled', repo.get('disabled'));
 
-        repo.put('OpenIssuesCount', repo.get('open_issues_count'));
+        repo.put('Open_Issues_Count', repo.get('open_issues_count'));
 
         repo.put('License', repo.get('license'));
 
         repo.put('Size', repo.get('size'));
-        repo.put('TotalForks', repo.get('forks_count'));
+        repo.put('Total_Forks', repo.get('forks_count'));
         repo.put('Watchers', repo.get('watchers_count'));
 
         Map<String, Object> owner = (Map<String, Object>)repo.get('owner');
-        repo.put('OwnerLogin', owner.get('login'));
+        repo.put('Owner_Login', owner.get('login'));
 
         return repo;
     }

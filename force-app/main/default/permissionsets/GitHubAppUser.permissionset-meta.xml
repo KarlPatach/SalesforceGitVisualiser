@@ -6,257 +6,257 @@
     </applicationVisibilities>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.AssigneeId__c</field>
+        <field>GitHub_Issue__x.AssigneeId__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.Assignee__c</field>
+        <field>GitHub_Issue__x.Assignee__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.Body__c</field>
+        <field>GitHub_Issue__x.Body__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.ClosedDate__c</field>
+        <field>GitHub_Issue__x.Closed_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.CreatedDate__c</field>
+        <field>GitHub_Issue__x.Created_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.IssueURL__c</field>
+        <field>GitHub_Issue__x.Issue_URL__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.Number__c</field>
+        <field>GitHub_Issue__x.Number__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.OwnerId__c</field>
+        <field>GitHub_Issue__x.OwnerId__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.Owner__c</field>
+        <field>GitHub_Issue__x.Owner__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.PullRequest__c</field>
+        <field>GitHub_Issue__x.Pull_Request__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.RepositoryId__c</field>
+        <field>GitHub_Issue__x.RepositoryId__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.RepositoryURL__c</field>
+        <field>GitHub_Issue__x.Repository_URL__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.State__c</field>
+        <field>GitHub_Issue__x.State__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.Title__c</field>
+        <field>GitHub_Issue__x.Title__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.UpdatedDate__c</field>
+        <field>GitHub_Issue__x.Updated_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Issues__x.User__c</field>
+        <field>GitHub_Issue__x.User__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Pull_Requests__x.Body__c</field>
+        <field>GitHub_Pull_Request__x.Body__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Pull_Requests__x.ClosedDate__c</field>
+        <field>GitHub_Pull_Request__x.Closed_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Pull_Requests__x.CreatedDate__c</field>
+        <field>GitHub_Pull_Request__x.Created_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Pull_Requests__x.Draft__c</field>
+        <field>GitHub_Pull_Request__x.Draft__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Pull_Requests__x.MergedDate__c</field>
+        <field>GitHub_Pull_Request__x.Merged_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Pull_Requests__x.Merged__c</field>
+        <field>GitHub_Pull_Request__x.Merged__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Pull_Requests__x.Number__c</field>
+        <field>GitHub_Pull_Request__x.Number__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Pull_Requests__x.OwnerId__c</field>
+        <field>GitHub_Pull_Request__x.OwnerId__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Pull_Requests__x.Owner__c</field>
+        <field>GitHub_Pull_Request__x.Owner__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Pull_Requests__x.PRCreatedDate__c</field>
+        <field>GitHub_Pull_Request__x.Pull_Request_Created_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Pull_Requests__x.PRUpdatedDate__c</field>
+        <field>GitHub_Pull_Request__x.Pull_Request_Updated_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Pull_Requests__x.PullRequestURL__c</field>
+        <field>GitHub_Pull_Request__x.Pull_Request_URL__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Pull_Requests__x.RepoName__c</field>
+        <field>GitHub_Pull_Request__x.Repository_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Pull_Requests__x.State__c</field>
+        <field>GitHub_Pull_Request__x.State__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Pull_Requests__x.Title__c</field>
+        <field>GitHub_Pull_Request__x.Title__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Pull_Requests__x.UpdatedDate__c</field>
+        <field>GitHub_Pull_Request__x.Updated_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Repos__x.Archived__c</field>
+        <field>GitHub_Repository__x.Archived__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Repos__x.Description__c</field>
+        <field>GitHub_Repository__x.Description__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Repos__x.Disabled__c</field>
+        <field>GitHub_Repository__x.Disabled__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Repos__x.Fork__c</field>
+        <field>GitHub_Repository__x.Fork__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Repos__x.Language__c</field>
+        <field>GitHub_Repository__x.Language__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Repos__x.LanguagesUrl__c</field>
+        <field>GitHub_Repository__x.Languages_URL__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Repos__x.LastPushedDate__c</field>
+        <field>GitHub_Repository__x.Last_Pushed_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Repos__x.License__c</field>
+        <field>GitHub_Repository__x.License__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Repos__x.Name__c</field>
+        <field>GitHub_Repository__x.Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Repos__x.OpenIssuesCount__c</field>
+        <field>GitHub_Repository__x.Open_Issues_Count__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Repos__x.OwnerLogin__c</field>
+        <field>GitHub_Repository__x.Owner_Login__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Repos__x.Private__c</field>
+        <field>GitHub_Repository__x.Private__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Repos__x.RepoCreatedDate__c</field>
+        <field>GitHub_Repository__x.Repository_Created_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Repos__x.RepoUpdatedDate__c</field>
+        <field>GitHub_Repository__x.Repository_Updated_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Repos__x.RepositoryURL__c</field>
+        <field>GitHub_Repository__x.Repository_URL__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Repos__x.Size__c</field>
+        <field>GitHub_Repository__x.Size__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Repos__x.Stars__c</field>
+        <field>GitHub_Repository__x.Stars__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Repos__x.TotalForks__c</field>
+        <field>GitHub_Repository__x.Total_Forks__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>GitHub_Repos__x.Watchers__c</field>
+        <field>GitHub_Repository__x.Watchers__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
@@ -267,7 +267,7 @@
         <allowEdit>false</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
-        <object>GitHub_Issues__x</object>
+        <object>GitHub_Issue__x</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -276,7 +276,7 @@
         <allowEdit>false</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
-        <object>GitHub_Pull_Requests__x</object>
+        <object>GitHub_Pull_Request__x</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -285,19 +285,19 @@
         <allowEdit>false</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
-        <object>GitHub_Repos__x</object>
+        <object>GitHub_Repository__x</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <tabSettings>
-        <tab>GitHub_Issues__x</tab>
+        <tab>GitHub_Issue__x</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
-        <tab>GitHub_Pull_Requests__x</tab>
+        <tab>GitHub_Pull_Request__x</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
-        <tab>GitHub_Repos__x</tab>
+        <tab>GitHub_Repository__x</tab>
         <visibility>Visible</visibility>
     </tabSettings>
 </PermissionSet>

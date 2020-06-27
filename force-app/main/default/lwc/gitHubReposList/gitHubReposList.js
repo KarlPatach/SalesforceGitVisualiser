@@ -18,7 +18,7 @@ const columns = [
   { label: "Description", fieldName: "Description__c", type: "text" },
   {
     label: "Last Pushed date",
-    fieldName: "LastPushedDate__c",
+    fieldName: "Last_Pushed_Date__c",
     type: "date",
     typeAttributes: {
       year: "numeric",
@@ -39,7 +39,7 @@ const columns = [
   },
   {
     label: "Open Issues",
-    fieldName: "OpenIssuesCount__c",
+    fieldName: "Open_Issues_Count__c",
     type: "number",
     initialWidth: 120,
     hideDefaultActions: true,

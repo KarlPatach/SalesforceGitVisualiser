@@ -325,9 +325,9 @@
         <profile>HighVolumePortal</profile>
     </profileActionOverrides>
     <tabs>standard-home</tabs>
-    <tabs>GitHub_Repos__x</tabs>
-    <tabs>GitHub_Issues__x</tabs>
-    <tabs>GitHub_Pull_Requests__x</tabs>
+    <tabs>GitHub_Repository__x</tabs>
+    <tabs>GitHub_Issue__x</tabs>
+    <tabs>GitHub_Pull_Request__x</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>GitHub_UtilityBar</utilityBar>
 </CustomApplication>
