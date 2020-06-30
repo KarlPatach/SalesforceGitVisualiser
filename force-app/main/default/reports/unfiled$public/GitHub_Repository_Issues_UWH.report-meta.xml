@@ -23,7 +23,7 @@
         <summaryAxisRange>Auto</summaryAxisRange>
         <textColor>#000000</textColor>
         <textSize>12</textSize>
-        <title>Open Issues Per Repo</title>
+        <title>Open Issues Per Repository</title>
         <titleColor>#000000</titleColor>
         <titleSize>18</titleSize>
     </chart>
@@ -40,7 +40,7 @@
         <sortOrder>Desc</sortOrder>
         <sortType>Aggregate</sortType>
     </groupingsDown>
-    <name>GitHub Repos Issues</name>
+    <name>Open Issues Per Repository</name>
     <params>
         <name>co</name>
         <value>1</value>
