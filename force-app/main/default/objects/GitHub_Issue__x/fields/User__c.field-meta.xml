@@ -9,7 +9,8 @@
     <isSortingDisabled>false</isSortingDisabled>
     <label>User</label>
     <length>255</length>
-    <required>false</required>
-    <type>Text</type>
-    <unique>false</unique>
+    <referenceTargetField>User.GitHub_Username__c</referenceTargetField>
+    <referenceTo>User</referenceTo>
+    <relationshipName>User</relationshipName>
+    <type>IndirectLookup</type>
 </CustomField>
