@@ -9,7 +9,8 @@
     <isSortingDisabled>false</isSortingDisabled>
     <label>RepositoryId</label>
     <length>255</length>
-    <required>false</required>
-    <type>Text</type>
-    <unique>false</unique>
+    <referenceTo>GitHub_Repository__x</referenceTo>
+    <relationshipLabel>GitHub Issues</relationshipLabel>
+    <relationshipName>GitHub_Issues</relationshipName>
+    <type>ExternalLookup</type>
 </CustomField>
