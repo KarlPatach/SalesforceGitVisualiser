@@ -349,6 +349,11 @@
         <field>GitHub_Repository__x.Watchers__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>User.GitHub_Username__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>GitHub App User</label>
     <objectPermissions>

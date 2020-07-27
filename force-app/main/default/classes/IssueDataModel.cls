@@ -33,7 +33,7 @@ public with sharing class IssueDataModel {
 
         columns.add(DataSource.Column.text('Assignee'));
         columns.add(DataSource.Column.text('AssigneeId'));
-        columns.add(DataSource.Column.text('User'));
+        columns.add(DataSource.Column.indirectLookup('User', 'User', 'GitHub_Username__c'));
       
         DataSource.Column pullRequest = DataSource.Column.url('Pull_Request');
         pullRequest.label = 'Pull Request';
