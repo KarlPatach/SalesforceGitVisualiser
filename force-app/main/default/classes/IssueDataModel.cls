@@ -11,7 +11,7 @@ public with sharing class IssueDataModel {
         repositoryUrl.label = 'Repository Url';
         columns.add(repositoryUrl);
 
-        columns.add(DataSource.Column.text('RepositoryId'));
+        columns.add(DataSource.Column.externalLookup('RepositoryId', 'GitHub_Repository__x'));
         
         DataSource.Column issueUrl = DataSource.Column.url('Issue_URL');
         issueUrl.label = 'Issue Url';
