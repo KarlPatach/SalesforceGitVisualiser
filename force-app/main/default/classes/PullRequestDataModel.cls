@@ -1,5 +1,6 @@
 public class PullRequestDataModel {
     public static final String TABLE_NAME = 'GitHub Pull Request';
+    private static final Pattern pullRequestUrlPattern = Pattern.compile('https:\\/\\/api.github.com\\/repos\\/(\\S+)\\/(\\S+)\\/pulls\\/(\\d+)');
     
     public static DataSource.Table buildTable(){
         List<DataSource.Column> columns = new List<DataSource.Column>();
@@ -88,31 +89,35 @@ public class PullRequestDataModel {
     } 
 
     public static DataSource.TableResult handleQuery(DataSource.QueryContext queryContext){
-        List<Map<String, Object>> pullRequests = new List<Map<String,Object>>();
-
-        List<Map<String, Object>> repos = RepositoryDataModel.fetchRepos();
-        
-
-        // For the hack:  don't return more than 98 repos, at 101 Apex will throw an error
-        List<Map<String, Object>> filteredRepos = new List<Map<String, Object>>();
-        for (Integer i=0; i<repos.size() && i<99; i++){
-            filteredRepos.add(repos.get(i));
-        }
-
-        for(Map<String, Object> repo : filteredRepos){
-            pullRequests.addAll(fetchPullRequests((String)repo.get('Owner_Login'), (String)repo.get('Name')));
-        }
-
-        List<Map<String, Object>> prs = DataSource.QueryUtils.process(queryContext, pullRequests);
-        DataSource.TableResult tableResult = DataSource.TableResult.get(queryContext, prs);
+        List<Map<String, Object>> pullRequests = DataSource.QueryUtils.process(queryContext, fetchPullRequests());
+        DataSource.TableResult tableResult = DataSource.TableResult.get(queryContext, pullRequests);
         return tableResult;
     } 
     
-    private static List<Map<String, Object>> fetchPullRequests(String user, String repositoryName){
+    public static List<Map<String, Object>> fetchPullRequests(){
+        List<Map<String, Object>> pullRequests = new List<Map<String,Object>>();
+
+        List<Map<String, Object>> issues = IssueDataModel.fetchIssues();
+        
+        for (Map<String,Object> issue : issues){
+            Map<String,Object> pullRequest=(Map<String,Object>)issue.get('pull_request');
+            if(pullRequest!=null && pullRequest.containsKey('url')){
+                pullRequests.add(
+                    fetchPullRequest(
+                        getPullRequestUrlFromRawUrl((String) pullRequest.get('url')
+                        )
+                    )
+                );
+            }
+        }
+
+        return pullRequests;
+    }
+
+    private static Map<String, Object> fetchPullRequest(String pullRequestUrl){
         Http httpProtocol = new Http();
         HttpRequest request = new HttpRequest();
-        String url = 'callout:GitHubCredentials/repos/' + user + '/' + repositoryName + '/pulls?state=open';
-        request.setEndpoint(url);
+        request.setEndpoint(pullRequestUrl);
         request.setMethod('GET');
         HttpResponse response = httpProtocol.send(request);
         
@@ -120,14 +125,24 @@ public class PullRequestDataModel {
             // Note: If a 4xx status code occurs when querying the GitHub API, deserializeUntyped()
             // will simply return a Map<Objects> instead of a List<Map<String, Object>>, resulting in
             // a runtime error.
-            return getPullRequests(response.getBody());
+            return buildPRFromJson((Map<String, Object>)JSON.deserializeUntyped(response.getBody()));
         } catch (Exception e) {
             // Silent die
+            System.debug(e.getMessage());
             System.debug('Bad response. Response: ' + response.getBody()
                                                + ', Status = ' + response.getStatus()
                                                + ', Status code = ' + response.getStatusCode()
                                                + ', Request: ' + request.getEndpoint());
         } 
-        return new List<Map<String,Object>>();
+        return new Map<String,Object>();
+    }
+
+    private static String getPullRequestUrlFromRawUrl(String rawUrl){
+        Matcher patternMatcher = pullRequestUrlPattern.matcher( rawUrl );
+        if( patternMatcher.matches() ){
+            String url = 'callout:GitHubCredentials/repos/' + patternMatcher.group(1) + '/' + patternMatcher.group(2) + '/pulls/' + patternMatcher.group(3);
+            return url;
+        }
+        throw new IllegalArgumentException('Badly formatted pull request URL. Response: ' + rawUrl);
     }
 }

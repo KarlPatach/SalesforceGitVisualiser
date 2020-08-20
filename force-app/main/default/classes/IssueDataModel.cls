@@ -102,6 +102,28 @@ public with sharing class IssueDataModel {
         return issue;
     } 
     
+    public static List<Map<String, Object>> fetchIssues(){
+        Http httpProtocol = new Http();
+        HttpRequest request = new HttpRequest();
+
+        String url = 'callout:GitHubCredentials/issues?filter=all&state=all';
+        request.setEndpoint(url);
+        request.setMethod('GET');
+        HttpResponse response = httpProtocol.send(request);
+
+        try {
+            // Note: If a 4xx status code occurs when querying the GitHub API, deserializeUntyped()
+            // will simply return a Map<Objects> instead of a List<Map<String, Object>>, resulting in
+            // a runtime error.
+            return getIssues(response.getBody());
+        } catch (Exception e) {
+            throw new IllegalArgumentException('Bad response. Response: ' + response.getBody()
+            + ', Status = ' + response.getStatus()
+            + ', Status code = ' + response.getStatusCode()
+            + ', Request: ' + request.getEndpoint(), e);
+        }  
+    }
+
     public static DataSource.TableResult handleQuery(DataSource.QueryContext queryContext){
         Http httpProtocol = new Http();
         HttpRequest request = new HttpRequest();
@@ -111,21 +133,10 @@ public with sharing class IssueDataModel {
         request.setMethod('GET');
         HttpResponse response = httpProtocol.send(request);
         
-        try {
-            // Note: If a 4xx status code occurs when querying the GitHub API, deserializeUntyped()
-            // will simply return a Map<Objects> instead of a List<Map<String, Object>>, resulting in
-            // a runtime error.
-            List<Map<String, Object>> pullRequests = getIssues(response.getBody());
-            List<Map<String, Object>> prs = DataSource.QueryUtils.process(queryContext, pullRequests);
-            DataSource.TableResult tableResult = DataSource.TableResult.get(queryContext, prs);
-            
-            return tableResult;
-            
-        } catch (Exception e) {
-            throw new IllegalArgumentException('Bad response. Response: ' + response.getBody()
-                                               + ', Status = ' + response.getStatus()
-                                               + ', Status code = ' + response.getStatusCode()
-                                               + ', Request: ' + request.getEndpoint(), e);
-        }       
+
+        List<Map<String, Object>> prs = DataSource.QueryUtils.process(queryContext, fetchIssues());
+        DataSource.TableResult tableResult = DataSource.TableResult.get(queryContext, prs);
+        
+        return tableResult;
     } 
 }
